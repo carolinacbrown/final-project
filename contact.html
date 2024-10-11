@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALPINHAUS | Contact </title>
+    <meta name="author" content="Carolina Brown">
+    <meta name="description" content="Alpinhaus - Traditional Swiss Lodging Contact Page">
+    
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+    <header>
+        <h1><a href="index.html">ALPINHAUS</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="hero-image"> 
+                <img src="images/swiss-valley.jpg" alt="Swiss Valley Mountains" width="1240" height="480">
+            </div>
+        </nav>
+    </header>
+
+    <main id="contact-page">
+        <div class="content">
+        <h2>Contact Us</h2>
+        <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p>
+        <img src="images/swiss-peak.jpg" alt="Contact Us" class="swiss-peak" width="620" height="520">
+        </div>
+
+        <div class="form">
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+                <!-- Full Name -->
+                <label for="name">Name<span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+
+                 <!-- email -->
+                <label for="email">Email<span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- phone -->
+                <label for="phone">Phone<span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <!-- radius button for email and phone -->
+                <fieldset>
+                    <legend>Preferred Method of Contact: <span class="required">*</span></legend>
+
+                    <input type="radio" name="contact-pref" id="pref-email" checked>
+                     <label for="pref-email">Email</label>
+                
+                     <input type="radio" name="contact-pref" id="pref-phone">
+                    <label for="pref-phone">Phone</label>
+                </fieldset>
+                
+                <!-- comments section -->
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments"></textarea>
+                
+                <!-- button -->
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024 - ALPINHAUS</p>
+        <p>This site is for educational purposes only.</p>
+    </footer>
+
+</body>
+</html>
